@@ -1,0 +1,277 @@
+[
+{
+  "id": "VIE-FLR-mobility-0001",
+  "title": "Floridsdorf S-Bahn, U-Bahn, Tram and Bus hub",
+  "summary": "Floridsdorf station connects S-Bahn lines S1/S2/S3/S7 with U-Bahn U6 and tram lines 25, 26, 30, 31, plus multiple bus routes.",
+  "type": "mobility",
+  "time": {"as_of": "2025-06"},
+  "source": {"name": "Wikipedia – Floridsdorf station", "url": "https://en.wikipedia.org/wiki/Floridsdorf_station"},
+  "tags": ["S-Bahn","U-Bahn","tram","bus","interchange"]
+},
+{
+  "id": "VIE-FLR-env-0002",
+  "title": "Floridsdorf street trees registry",
+  "summary": "The Vienna Tree Cadastre (Baumkataster) includes comprehensive data on street and park trees city-wide, including Floridsdorf.",
+  "type": "environment",
+  "time": {"as_of": "2024"},
+  "source": {"name": "Baumkataster Wien", "url": "https://www.data.gv.at/katalog/dataset/c91a4635-8b7d-43fe-9b27-d95dec8392a7"},
+  "tags": ["trees","green","shade"]
+},
+{
+  "id": "VIE-FLR-safety-0003",
+  "title": "Shooting incident near Floridsdorf skate park",
+  "summary": "In June 2025, police conducted operations after youths fired shots at a skate park near Floridsdorf station.",
+  "type": "safety",
+  "time": {"as_of": "2025-06-01"},
+  "source": {"name": "Vienna.at news", "url": "https://www.vienna.at/after-shooting-in-park-in-vienna-floridsdorf-focused-action-by-the-vienna-police/9444812"},
+  "tags": ["crime","shooting","safety","police"]
+},
+{
+  "id": "VIE-FLR-demo-0004",
+  "title": "Floridsdorf population growth & foreign residents",
+  "summary": "Floridsdorf is Vienna’s third most populous district (~189,600 in 2025); ~30.7% of residents are not Austrian citizens.",
+  "type": "demographic",
+  "time": {"as_of": "2025-01-01"},
+  "source": {"name": "Wikipedia – Floridsdorf", "url": "https://en.wikipedia.org/wiki/Floridsdorf"},
+  "tags": ["population","migration","density"]
+},
+{
+  "id": "VIE-FLR-plan-0005",
+  "title": "Floridsdorf urbanization & growth trend",
+  "summary": "Floridsdorf has grown rapidly in the 21st century, with significant housing developments but moderate density due to open spaces.",
+  "type": "planning",
+  "time": {"as_of": "2024"},
+  "source": {"name": "Wikipedia – Floridsdorf", "url": "https://en.wikipedia.org/wiki/Floridsdorf"},
+  "tags": ["growth","housing","development"]
+},
+{
+  "id": "VIE-FLR-sentiment-0006",
+  "title": "Far-right political shift tied to feeling of insecurity",
+  "summary": "Floridsdorf saw increased votes for far-right parties, with residents citing rising crime and loss of social cohesion near the station area.",
+  "type": "social",
+  "time": {"as_of": "2024-10-01"},
+  "source": {"name": "The Times (via news summary)", "url": ""},
+  "tags": ["politics","security sentiment","social cohesion"]
+},
+{
+  "id": "VIE-PRT-mobility-0001",
+  "title": "Praterstern & Vorgartenstraße multimodal hub",
+  "summary": "Praterstern connects U-Bahn lines U1 and U2 with S-Bahn services (S1, S2, S3, S4, S7), regional trains, trams O and 5, and buses; Vorgartenstraße on the U1 is one stop away, serving the residential north Leopoldstadt area.",
+  "type": "mobility",
+  "time": {"as_of": "2025-06"},
+  "source": {"name": "Wikipedia – Wien Praterstern station", "url": "https://en.wikipedia.org/wiki/Wien_Praterstern_station"},
+  "tags": ["S-Bahn","U-Bahn","tram","bus","interchange","residential access"]
+},
+{
+  "id": "VIE-PRT-env-0002",
+  "title": "Green corridor to Wiener Prater",
+  "summary": "The area lies at the northern gateway to the 6 km² Wiener Prater park, with tree-lined avenues, cycle lanes, and access to extensive green space.",
+  "type": "environment",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Wikipedia – Wiener Prater", "url": "https://en.wikipedia.org/wiki/Wiener_Prater"},
+  "tags": ["trees","green space","cycling","park access"]
+},
+{
+  "id": "VIE-PRT-safety-0003",
+  "title": "Public safety concerns at Praterstern",
+  "summary": "Praterstern has been identified in surveys as an area with safety concerns, especially at night, prompting frequent police patrols and security cameras.",
+  "type": "safety",
+  "time": {"as_of": "2024"},
+  "source": {"name": "ORF Wien – Local News", "url": "https://wien.orf.at/"},
+  "tags": ["security","police","public safety"]
+},
+{
+  "id": "VIE-PRT-demo-0004",
+  "title": "Diverse population in Leopoldstadt",
+  "summary": "Leopoldstadt district has around 39% foreign-born residents, creating a highly multicultural environment around Praterstern and Vorgartenstraße.",
+  "type": "demographic",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Wikipedia – Leopoldstadt", "url": "https://en.wikipedia.org/wiki/Leopoldstadt"},
+  "tags": ["diversity","multicultural","demographics"]
+},
+{
+  "id": "VIE-PRT-plan-0005",
+  "title": "Transport hub modernisation",
+  "summary": "City plans have included upgrades to Praterstern’s public space, lighting, and pedestrian flows, aiming to improve safety and comfort.",
+  "type": "planning",
+  "time": {"as_of": "2024"},
+  "source": {"name": "City of Vienna – Urban Development", "url": "https://www.wien.gv.at/english/urbanplanning/"},
+  "tags": ["redevelopment","public space","lighting","pedestrian flow"]
+},
+{
+  "id": "VIE-PRT-leisure-0006",
+  "title": "Proximity to Wiener Prater amusement park",
+  "summary": "Praterstern is within walking distance of the Wiener Prater amusement park and Riesenrad, attracting both tourists and locals year-round.",
+  "type": "leisure",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Wikipedia – Wiener Prater", "url": "https://en.wikipedia.org/wiki/Wiener_Prater"},
+  "tags": ["tourism","recreation","amusement park"]
+},
+{
+  "id": "VIE-KAR-mobility-0001",
+  "title": "Karlsplatz U-Bahn interchange",
+  "summary": "Karlsplatz is one of Vienna's busiest underground interchanges, connecting U-Bahn lines U1, U2, and U4, and offering access to tram lines D, 1, 62, and Badner Bahn.",
+  "type": "mobility",
+  "time": {"as_of": "2025-06"},
+  "source": {"name": "Wikipedia – Karlsplatz (Vienna U-Bahn)", "url": "https://en.wikipedia.org/wiki/Karlsplatz_(Vienna_U-Bahn)"},
+  "tags": ["U-Bahn","tram","interchange","public transport"]
+},
+{
+  "id": "VIE-KAR-env-0002",
+  "title": "Resselpark and adjacent green space",
+  "summary": "Resselpark, located above Karlsplatz station, provides a small but important green space in the city center with mature trees, benches, and fountains.",
+  "type": "environment",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna Parks – Resselpark", "url": "https://www.wien.gv.at/english/environment/parks/"},
+  "tags": ["green space","trees","public park"]
+},
+{
+  "id": "VIE-KAR-safety-0003",
+  "title": "Safety concerns and dim lighting",
+  "summary": "Karlsplatz has areas with dim lighting and is known for late-night loitering and occasional antisocial behaviour, prompting periodic police patrols.",
+  "type": "safety",
+  "time": {"as_of": "2024"},
+  "source": {"name": "ORF Wien – Local News", "url": "https://wien.orf.at/"},
+  "tags": ["safety","police","public space","lighting"]
+},
+{
+  "id": "VIE-KAR-demo-0004",
+  "title": "Mixed central district demographics",
+  "summary": "Karlsplatz sits at the junction of Wieden, Innere Stadt, and Margareten, bringing together students, professionals, and tourists in one area.",
+  "type": "demographic",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Wikipedia – Karlsplatz", "url": "https://en.wikipedia.org/wiki/Karlsplatz"},
+  "tags": ["students","professionals","tourists","city center"]
+},
+{
+  "id": "VIE-KAR-plan-0005",
+  "title": "Karlsplatz redesign and public space projects",
+  "summary": "Over the past decade, several projects have aimed to make Karlsplatz more pedestrian-friendly, with improved seating, lighting, and event spaces.",
+  "type": "planning",
+  "time": {"as_of": "2024"},
+  "source": {"name": "City of Vienna – Urban Development", "url": "https://www.wien.gv.at/english/urbanplanning/"},
+  "tags": ["redevelopment","public space","pedestrian"]
+},
+{
+  "id": "VIE-KAR-leisure-0006",
+  "title": "Art markets and cultural events",
+  "summary": "Karlsplatz hosts open-air art markets, Vienna Design Week installations, and cultural festivals, making it a creative hub in the city.",
+  "type": "leisure",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna Design Week", "url": "https://www.viennadesignweek.at/en/"},
+  "tags": ["art","culture","festival","market"]
+},
+
+{
+  "id": "VIE-RAT-mobility-0001",
+  "title": "Rathausplatz public transport access",
+  "summary": "Rathausplatz is served by U-Bahn line U2 at Rathaus station and multiple tram lines along nearby Ringstraße, providing easy access to central Vienna.",
+  "type": "mobility",
+  "time": {"as_of": "2025-06"},
+  "source": {"name": "Wikipedia – Rathaus, Vienna", "url": "https://en.wikipedia.org/wiki/Rathaus_(Vienna)"},
+  "tags": ["U-Bahn","tram","public transport","city center"]
+},
+{
+  "id": "VIE-RAT-env-0002",
+  "title": "Rathauspark green space",
+  "summary": "Rathausplatz is bordered by Rathauspark, a landscaped public park with formal gardens, shaded seating areas, and historic monuments.",
+  "type": "environment",
+  "time": {"as_of": "2025"},
+  "source": {"name": "City of Vienna – Parks", "url": "https://www.wien.gv.at/english/environment/parks/"},
+  "tags": ["green space","public park","gardens","monuments"]
+},
+{
+  "id": "VIE-RAT-safety-0003",
+  "title": "Safety during large public events",
+  "summary": "Rathausplatz is generally safe, but large events such as the Christmas Market attract pickpocket activity, leading to increased police presence.",
+  "type": "safety",
+  "time": {"as_of": "2024"},
+  "source": {"name": "Vienna Police – Event Safety Advisory", "url": "https://www.polizei.gv.at/wien/"},
+  "tags": ["safety","events","crowds","pickpockets"]
+},
+{
+  "id": "VIE-RAT-demo-0004",
+  "title": "Tourist and local mix",
+  "summary": "Rathausplatz attracts a mix of tourists and local residents, especially during seasonal events, contributing to high pedestrian density.",
+  "type": "demographic",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna Tourism Board", "url": "https://www.wien.info/en"},
+  "tags": ["tourism","residents","pedestrian traffic"]
+},
+{
+  "id": "VIE-RAT-plan-0005",
+  "title": "Seasonal event infrastructure",
+  "summary": "The square’s infrastructure supports rapid transformation for events such as the Christmas Market, film festival, and public screenings.",
+  "type": "planning",
+  "time": {"as_of": "2025"},
+  "source": {"name": "City of Vienna – Event Planning", "url": "https://www.wien.gv.at/english/culture/events/"},
+  "tags": ["event space","temporary structures","planning"]
+},
+
+{
+  "id": "VIE-RAT-leisure-0006",
+  "title": "Christmas Market and Film Festival",
+  "summary": "Rathausplatz hosts Vienna’s iconic Christmas Market each winter and the open-air Film Festival during summer, drawing large crowds.",
+  "type": "leisure",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna.info – Events", "url": "https://www.wien.info/en"},
+  "tags": ["market","festival","culture","public event"]
+},
+
+{
+  "id": "VIE-DNK-mobility-0001",
+  "title": "Donaukanal public transport access",
+  "summary": "Multiple U-Bahn stations provide access to the Donaukanal, including U4 stations Schwedenplatz, Schottenring, and Friedensbrücke, as well as U2 and U1 interchanges nearby.",
+  "type": "mobility",
+  "time": {"as_of": "2025-06"},
+  "source": {"name": "Wikipedia – Donaukanal", "url": "https://en.wikipedia.org/wiki/Donaukanal"},
+  "tags": ["U-Bahn","public transport","river access"]
+},
+{
+  "id": "VIE-DNK-env-0002",
+  "title": "Biodiversity along the Donaukanal",
+  "summary": "The Donaukanal riverbanks host diverse flora and fauna, with efforts to preserve urban biodiversity through green embankments and water quality monitoring.",
+  "type": "environment",
+  "time": {"as_of": "2025"},
+  "source": {"name": "City of Vienna – Environment", "url": "https://www.wien.gv.at/english/environment/"},
+  "tags": ["biodiversity","water","green space"]
+},
+{
+  "id": "VIE-DNK-safety-0003",
+  "title": "Night-time safety concerns",
+  "summary": "Certain sections of the Donaukanal have limited lighting at night, raising safety concerns for pedestrians and cyclists after dark.",
+  "type": "safety",
+  "time": {"as_of": "2024"},
+  "source": {"name": "ORF Wien – Local News", "url": "https://wien.orf.at/"},
+  "tags": ["lighting","night safety","cycling","pedestrian"]
+},
+{
+  "id": "VIE-DNK-demo-0004",
+  "title": "Popular with young residents and tourists",
+  "summary": "The Donaukanal is a social hotspot, attracting students, young professionals, and tourists for leisure, sports, and cultural activities.",
+  "type": "demographic",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna Tourism Board", "url": "https://www.wien.info/en"},
+  "tags": ["youth","tourism","social life"]
+},
+{
+  "id": "VIE-DNK-plan-0005",
+  "title": "Waterfront development initiatives",
+  "summary": "City planning initiatives aim to balance recreation, cultural spaces, and ecological preservation along the Donaukanal waterfront.",
+  "type": "planning",
+  "time": {"as_of": "2025"},
+  "source": {"name": "City of Vienna – Urban Planning", "url": "https://www.wien.gv.at/english/urbanplanning/"},
+  "tags": ["waterfront","redevelopment","planning"]
+},
+{
+  "id": "VIE-DNK-leisure-0006",
+  "title": "Summer bars and open-air events",
+  "summary": "The Donaukanal hosts popular summer bars, street art displays, and open-air concerts, making it a vibrant seasonal destination.",
+  "type": "leisure",
+  "time": {"as_of": "2025"},
+  "source": {"name": "Vienna.info – Events", "url": "https://www.wien.info/en"},
+  "tags": ["bars","events","street art","music"]
+}
+
+
+]
