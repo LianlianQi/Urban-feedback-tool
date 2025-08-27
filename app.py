@@ -23,12 +23,8 @@ for k, v in defaults.items():
 
 def sidebar_nav():
     with st.sidebar:
-        st.title("🏙️ VisibleCity GPT")
-        st.caption("Prototype — community personas + local RAG")
         if st.button("Upload / Start Over", use_container_width=True):
             st.session_state.page = 'upload'; st.rerun()
-        st.divider()
-        st.write("Navigate:")
         st.button("Persona Choice", on_click=lambda: st.session_state.update(page='persona_choice'), use_container_width=True)
         st.button("Predefined Personas", on_click=lambda: st.session_state.update(page='predefined_personas'), use_container_width=True)
         st.button("Custom Persona", on_click=lambda: st.session_state.update(page='custom_persona'), use_container_width=True)
