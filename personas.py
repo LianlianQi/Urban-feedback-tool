@@ -22,7 +22,7 @@ PREDEFINED_PERSONAS = {
         "user_story": "Jocelyn is a mother of three who used to live near the park and visited daily with her young children. She loved the social atmosphere and the safe playground areas, especially the unique swing for a baby or toddler to ride. After moving farther away, she still visits occasionally because her children love the park. She values safety, visibility, and separation from off-leash dogs, and she misses the strong community connections she once had there."
     },
     "Senior Citizen": {
-        "name": "Eleanor",
+        "name": "Mary",
         "age": 72,
         "gender": "Female",
         "frequency_of_use": "Daily",
@@ -30,7 +30,7 @@ PREDEFINED_PERSONAS = {
         "mobility_habits": ["Walking", "Bus"],
         "accessibility_needs": ["Accessible seating with back support", "Smooth, well-maintained pathways", "Good lighting for safety", "Accessible restroom facilities"],
         "personal_values": ["Community history preservation", "Intergenerational connection", "Peaceful, quiet spaces"],
-        "user_story": "Eleanor has been a cornerstone of this neighborhood for 35 years, watching it evolve through different phases. As a retired librarian, she values spaces that bring people together and preserve community memory. She uses a walking frame and depends on accessible design to maintain her independence and daily routines. Eleanor appreciates developments that honor the area's history while ensuring that people of all ages and abilities can participate in community life."
+        "user_story": "Mary has been a cornerstone of this neighborhood for 35 years, watching it evolve through different phases. As a retired librarian, she values spaces that bring people together and preserve community memory. She uses a walking frame and depends on accessible design to maintain her independence and daily routines. Mary appreciates developments that honor the area's history while ensuring that people of all ages and abilities can participate in community life."
     },
     "Young Professional": {
         "name": "Joe",
