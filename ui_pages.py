@@ -254,7 +254,7 @@ def page_upload():
 
 def page_persona_choice():
     """Page 2: Choose between predefined or custom persona"""
-    st.title("👥 Choose Your Community Member")
+    st.title(" Choose Your Community Member")
     st.markdown("### Who would you like to get feedback from?")
     if st.button("← Back to Project Upload"):
         st.session_state.page = 'upload'
@@ -438,7 +438,7 @@ def page_feedback():
             </div>
             """, unsafe_allow_html=True)
         with col2:
-            st.subheader(f"🗣️ {persona['name']}'s Feedback")
+            st.subheader(f"💬 {persona['name']}'s Feedback")
             with st.spinner(f"Getting feedback from {persona['name']}..."):
                 initial_feedback = get_openai_response(
                     persona, 
@@ -472,7 +472,7 @@ def page_feedback():
             if i == 0 and message['role'] == 'persona':
                 continue
             if message['role'] == 'persona':
-                with st.chat_message("assistant", avatar="👤"):
+                with st.chat_message("assistant", avatar="🙎‍♀️"):
                     st.write(f"**{persona['name']}:** {message['content']}")
             else:
                 with st.chat_message("user", avatar="👨‍💼"):
