@@ -56,7 +56,7 @@
 {
   "id": "VIE-PRT-mobility-0001",
   "title": "Praterstern & Vorgartenstraße multimodal hub",
-  "summary": "Praterstern connects U-Bahn lines U1 and U2 with S-Bahn services (S1, S2, S3, S4, S7), regional trains, trams O and 5, and buses; Vorgartenstraße on the U1 is one stop away, serving the residential north Leopoldstadt area.",
+  "summary": "Praterstern connects U-Bahn lines U1 and U2 with S-Bahn services (S1, S2, S3, S4, S7), regional trains, trams O and 5, and buses 5B, 80A, 82A; Vorgartenstraße on the U1 is one stop away, serving the residential north Leopoldstadt area.",
   "type": "mobility",
   "time": {"as_of": "2025-06"},
   "source": {"name": "Wikipedia – Wien Praterstern station", "url": "https://en.wikipedia.org/wiki/Wien_Praterstern_station"},
@@ -101,7 +101,7 @@
 {
   "id": "VIE-PRT-leisure-0006",
   "title": "Proximity to Wiener Prater amusement park",
-  "summary": "Praterstern is within walking distance of the Wiener Prater amusement park and Riesenrad, attracting both tourists and locals year-round.",
+  "summary": "Praterstern is within walking distance of the Wiener Prater amusement park and famous Giant Ferris Wheel Riesenrad, attracting both tourists and locals year-round.Its position near cultural and recreational attractions extends its appeal beyond transport functions.",
   "type": "leisure",
   "time": {"as_of": "2025"},
   "source": {"name": "Wikipedia – Wiener Prater", "url": "https://en.wikipedia.org/wiki/Wiener_Prater"},
