@@ -62,7 +62,7 @@ def get_openai_response(persona_info: Dict, project_description: str, uploaded_i
         gender = persona_info.get('gender') or persona_info.get('Gender', 'resident')
         frequency = persona_info.get('frequency') or persona_info.get('Frequency of use') or persona_info.get('frequency_of_use', 'regular')
         reasons = persona_info.get('reasons') or persona_info.get('Reason for visiting') or persona_info.get('reason_for_visiting', 'various reasons')
-        values = persona_info.get('values') or persona_info.get('Personal values') or persona_info.get('personal_values', 'community well-being')
+        values = persona_info.get('values') or persona_info.get('Other values') or persona_info.get('other_values', 'community well-being')
         mobility = persona_info.get('mobility') or persona_info.get('Mobility habits') or persona_info.get('mobility_habits', 'standard mobility')
         accessibility = persona_info.get('accessibility') or persona_info.get('Accessibility needs') or persona_info.get('accessibility_needs', 'none specified')
         story = persona_info.get('story') or persona_info.get('user_story') or ""
@@ -256,8 +256,8 @@ def generate_user_story(persona_data: Dict) -> str:
                          or persona_data.get('Accessibility needs')
                          or "")
         values = (persona_data.get('values')
-                  or persona_data.get('personal_values')
-                  or persona_data.get('Personal values')
+                  or persona_data.get('other_values')
+                  or persona_data.get('Other values')
                   or "")
 
         # Lists → readable strings
@@ -274,7 +274,7 @@ def generate_user_story(persona_data: Dict) -> str:
             "Reason for visiting": _to_str(reasons),
             "Mobility habits": _to_str(mobility),
             "Accessibility needs": _to_str(accessibility),
-            "Personal values": _to_str(values),
+            "Other values": _to_str(values),
         }
 
         # Build prompt safely: inject a single JSON blob
