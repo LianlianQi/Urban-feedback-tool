@@ -220,7 +220,7 @@ def save_persona_to_history(persona, project_description, chat_history):
 
 def page_upload():
     """Page 1: Project upload and description"""
-    st.title("Urban Design Community Feedback Tool")
+    st.title("Urban Design")
     # st.markdown("### Share your urban design project and get feedback from diverse community perspectives")
     col1, col2 = st.columns([1, 1])
     with col1:
@@ -262,15 +262,15 @@ def page_persona_choice():
     st.markdown("---")
     col1, col2 = st.columns(2)
     with col1:
-        st.subheader("Pre-defined Personas")
-        st.markdown("Choose from our diverse community members, each with unique backgrounds and perspectives.")
-        if st.button("Select Pre-defined Persona", type="primary", use_container_width=True):
+        st.subheader("Pre-defined Role")
+        st.markdown("Choose from our diverse roles, each with unique backgrounds and perspectives.")
+        if st.button("Select Pre-defined Role", type="primary", use_container_width=True):
             st.session_state.page = 'predefined_personas'
             st.rerun()
     with col2:
-        st.subheader("Create New Persona")
-        st.markdown("Build a custom community member based on specific demographics and characteristics you want to explore.")
-        if st.button("Create Custom Persona", type="primary", use_container_width=True):
+        st.subheader("Create New Role")
+        st.markdown("Build a custom  roles based on specific demographics and characteristics you want to explore.")
+        if st.button("Create Custom Role", type="primary", use_container_width=True):
             st.session_state.page = 'custom_persona'
             st.rerun()
 
@@ -279,7 +279,7 @@ def page_persona_choice():
 def page_predefined_personas():
     """Page 3a: Select from predefined personas"""
     st.title("Community Member Profiles")
-    if st.button("← Back to Persona Choice"):
+    if st.button("← Back to Role Choice"):
         st.session_state.page = 'persona_choice'
         st.rerun()
     col1, col2 = st.columns([1, 1])
@@ -290,7 +290,7 @@ def page_predefined_personas():
                 st.session_state.temp_selected_persona = persona_info
                 st.rerun()
     with col2:
-        st.subheader("Persona Details")
+        st.subheader("Role Details")
         if st.session_state.get('temp_selected_persona'):
             persona = st.session_state.temp_selected_persona
             st.markdown(f"**Name:** {persona['name']}")
@@ -306,13 +306,13 @@ def page_predefined_personas():
             st.markdown("**Accessibility needs:**")
             for need in persona['accessibility_needs']:
                 st.markdown(f"• {need}")
-            st.markdown("**Personal values:**")
-            for value in persona['personal_values']:
+            st.markdown("**Other values:**")
+            for value in persona['other_values']:
                 st.markdown(f"• {value}")
             st.markdown("**User Story:**")
             st.markdown(persona['user_story'])
             st.markdown("---")
-            if st.button("Choose this Persona", type="primary", use_container_width=True):
+            if st.button("Choose this Role", type="primary", use_container_width=True):
                 st.session_state.selected_persona = persona
                 st.session_state.page = 'feedback'
                 st.rerun()
@@ -323,13 +323,13 @@ def page_predefined_personas():
 
 def page_custom_persona():
     """Page 3b: Create custom persona"""
-    st.title("Create Your Custom Community Member")
-    if st.button("← Back to Persona Choice"):
+    st.title("Create Your Custom Role")
+    if st.button("← Back to Role Choice"):
         st.session_state.page = 'persona_choice'
         st.rerun()
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.subheader("Persona Details")
+        st.subheader("Role Details")
         persona_data = {}
         for category, description in PERSONA_CATEGORIES.items():
             if category == "Place":
@@ -348,15 +348,15 @@ def page_custom_persona():
                 persona_data[category.lower().replace(' ', '_')] = st.multiselect(f"{category}", ["Walking", "Cycling", "Public transit", "Driving", "Wheelchair", "Mobility aid", "Other"], help=description)
             elif category == "Accessibility needs":
                 persona_data[category.lower().replace(' ', '_')] = st.text_area(f"{category}", placeholder="e.g., wheelchair accessible paths, audio signals, good lighting, seating areas", help=description)
-            elif category == "Personal values":
+            elif category == "Other values":
                 persona_data[category.lower().replace(' ', '_')] = st.text_area(f"{category}", placeholder="e.g., environmental sustainability, community connection, safety, inclusivity", help=description)
-        if st.button("Generate Persona Story", type="primary"):
+        if st.button("Generate Role Story", type="primary"):
             if persona_data.get('place') and persona_data.get('age'):
                 if isinstance(persona_data.get('mobility_habits', ''), list):
                     persona_data['mobility'] = ', '.join(persona_data['mobility_habits'])
                 else:
                     persona_data['mobility'] = persona_data.get('mobility_habits', '')
-                with st.spinner("Generating persona story..."):
+                with st.spinner("Generating Role story..."):
                     user_story = generate_user_story(persona_data)
                 custom_persona = {
                     'name': f"{persona_data.get('age')}-year-old {persona_data.get('gender', 'Person')}",
@@ -367,7 +367,7 @@ def page_custom_persona():
                     'reasons': persona_data.get('reason_for_visiting'),
                     'mobility': persona_data.get('mobility', ''),
                     'accessibility': persona_data.get('accessibility_needs'),
-                    'values': persona_data.get('personal_values'),
+                    'values': persona_data.get('other_values'),
                     'story': user_story,
                     'background': f"Regular user of {persona_data.get('place', 'the area')}, visits {persona_data.get('frequency_of_use', 'regularly')}",
                     'concerns': ['Community well-being', 'Accessibility', 'Safety'],
@@ -378,10 +378,10 @@ def page_custom_persona():
             else:
                 st.error("Please fill in at least the Place and Age fields.")
     with col2:
-        st.subheader("Generated Persona Story")
+        st.subheader("Generated Role Story")
         if st.session_state.custom_persona:
             persona = st.session_state.custom_persona
-            st.success("Persona Generated!")
+            st.success("Role Generated!")
             st.markdown(f"**Place:** {persona.get('place', 'N/A')}")
             st.markdown(f"**Age:** {persona.get('age', 'N/A')}")
             st.markdown(f"**Gender:** {persona.get('gender', 'N/A')}")
@@ -391,11 +391,11 @@ def page_custom_persona():
             st.markdown("**Generated User Story:**")
             st.markdown(persona.get('story', 'No story generated'))
             st.markdown("---")
-            if st.button("Get Feedback from This Persona", type="primary", use_container_width=True):
+            if st.button("Get Feedback from This Role", type="primary", use_container_width=True):
                 st.session_state.page = 'feedback'
                 st.rerun()
         else:
-            st.info("👈 Fill in the form and click 'Generate Persona Story' to create your custom community member")
+            st.info("👈 Fill in the form and click 'Generate User Story' to create your custom role")
 
 # ---------- JSON parsing + bullet normalization helpers ----------
 
@@ -416,7 +416,7 @@ def page_feedback():
     else:
         st.markdown(f"**Age {persona['age']}**")
 
-    if st.button("← Back to Persona Selection"):
+    if st.button("← Back to Role Selection"):
         st.session_state.page = 'predefined_personas' if st.session_state.custom_persona is None else 'custom_persona'
         st.session_state.chat_history = []
         st.rerun()
