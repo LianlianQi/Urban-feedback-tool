@@ -493,7 +493,7 @@ def page_feedback():
     st.markdown("---")
     col1, col2, col3 = st.columns(3)
     with col1:
-        if st.button("Try Another Persona"):
+        if st.button("Try Another Role"):
             if st.session_state.chat_history:
                 save_persona_to_history(persona, st.session_state.project_description, st.session_state.chat_history)
             st.session_state.page = 'persona_choice'
