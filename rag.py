@@ -39,7 +39,7 @@ def cosine_sim(a, B):
 def make_query_text(persona_info: Dict, project_description: str, user_message: str = ""):
     place = persona_info.get('place') or persona_info.get('Place') or ""
     tags = [
-        persona_info.get('values') or persona_info.get('personal_values') or "",
+        persona_info.get('values') or persona_info.get('other_values') or "",
         persona_info.get('reasons') or persona_info.get('reason_for_visiting') or "",
     ]
     return " | ".join([place, project_description, user_message] + [str(t) for t in tags if t])
