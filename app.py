@@ -25,9 +25,9 @@ def sidebar_nav():
     with st.sidebar:
         if st.button("Upload / Start Over", use_container_width=True):
             st.session_state.page = 'upload'; st.rerun()
-        st.button("Persona Choice", on_click=lambda: st.session_state.update(page='persona_choice'), use_container_width=True)
-        st.button("Predefined Personas", on_click=lambda: st.session_state.update(page='predefined_personas'), use_container_width=True)
-        st.button("Custom Persona", on_click=lambda: st.session_state.update(page='custom_persona'), use_container_width=True)
+        st.button("Role Choice", on_click=lambda: st.session_state.update(page='persona_choice'), use_container_width=True)
+        st.button("Predefined Roles", on_click=lambda: st.session_state.update(page='predefined_personas'), use_container_width=True)
+        st.button("Custom Role", on_click=lambda: st.session_state.update(page='custom_persona'), use_container_width=True)
         st.button("Feedback", on_click=lambda: st.session_state.update(page='feedback'), use_container_width=True)
 
 def main():
