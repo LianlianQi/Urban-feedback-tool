@@ -4,7 +4,7 @@ from ui_pages import (
     page_custom_persona, page_feedback
 )
 
-st.set_page_config(page_title="Urban Design Community Feedback", page_icon="🏙️", layout="wide")
+st.set_page_config(page_title="Urban Design Role Feedback", page_icon="🏙️", layout="wide")
 
 # Session defaults
 defaults = {
