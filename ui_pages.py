@@ -243,7 +243,7 @@ def page_upload():
             image = Image.open(st.session_state.uploaded_image)
             st.image(image, caption='Your uploaded design', use_container_width=True)
     st.markdown("---")
-    if st.button("Meet Your Community", type="primary", use_container_width=True):
+    if st.button("Meet Your Role", type="primary", use_container_width=True):
         if project_description.strip():
             st.session_state.page = 'persona_choice'
             st.rerun()
@@ -254,7 +254,7 @@ def page_upload():
 
 def page_persona_choice():
     """Page 2: Choose between predefined or custom persona"""
-    st.title(" Choose Your Community Member")
+    st.title(" Choose Your Role Member")
     st.markdown("### Who would you like to get feedback from?")
     if st.button("← Back to Project Upload"):
         st.session_state.page = 'upload'
@@ -278,13 +278,13 @@ def page_persona_choice():
 
 def page_predefined_personas():
     """Page 3a: Select from predefined personas"""
-    st.title("Community Member Profiles")
+    st.title("Role Member Profiles")
     if st.button("← Back to Role Choice"):
         st.session_state.page = 'persona_choice'
         st.rerun()
     col1, col2 = st.columns([1, 1])
     with col1:
-        st.subheader("Select a Community Member:")
+        st.subheader("Select a Role Member:")
         for persona_key, persona_info in PREDEFINED_PERSONAS.items():
             if st.button(f"{persona_info['name']} - {persona_key}", key=persona_key, use_container_width=True):
                 st.session_state.temp_selected_persona = persona_info
@@ -317,7 +317,7 @@ def page_predefined_personas():
                 st.session_state.page = 'feedback'
                 st.rerun()
         else:
-            st.info("Click on a community member to see their detailed information")
+            st.info("Click on a role member to see their detailed information")
 
 
 
